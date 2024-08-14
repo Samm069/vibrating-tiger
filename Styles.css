@@ -1,0 +1,64 @@
+/* Basic styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #ff9800;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Vibrating tiger */
+.tiger-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.tiger {
+    width: 150px;
+    height: 150px;
+    background-image: url('https://example.com/tiger-image.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    animation: vibrate 0.3s infinite;
+}
+
+/* Animation */
+@keyframes vibrate {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(2px, 2px); }
+    50% { transform: translate(0, 2px); }
+    75% { transform: translate(2px, 0); }
+    100% { transform: translate(0, 0); }
+}
